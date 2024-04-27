@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "scourge",
+	"version": "${version}",
+	"name": "Scourge",
+	"description": "Damage Enchantment that affects a new array of enemies.",
+	"authors": [
+		"Wondiws98"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/Wondiws98",
+		"sources": "https://github.com/Wondiws98/scourge",
+		"issues": "https://github.com/Wondiws98/scourge/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.modrinth": "https://modrinth.com/user/Wondiws98"
+			}
+		}
+	},
+	"license": "MIT",
+	"icon": "assets/scourge/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wondiws98.scourge.ScourgeMain"
+		],
+		"fabric-datagen": [
+			"net.wondiws98.scourge.ScourgeDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
